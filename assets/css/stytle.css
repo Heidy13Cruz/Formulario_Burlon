@@ -1,0 +1,19 @@
+body {
+  background: rgb(89, 82, 210);
+  background: linear-gradient(90deg, rgb(89, 82, 210) 8%, rgba(127, 216, 217, 0.84357493) 35%, rgb(6, 75, 157) 57%, rgb(2, 226, 205) 86%, rgb(0, 212, 255) 100%);
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-left: 35%;
+}
+
+main {
+  background-color: rgb(171, 236, 209);
+  width: 25%;
+  text-align: center;
+}
+main__form {
+  text-align: center;
+  color: white;
+}
+
+/*# sourceMappingURL=stytle.css.map */
