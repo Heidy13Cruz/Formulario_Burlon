@@ -6,14 +6,53 @@ body{
     margin-left: 35%;
 }
 
+input{
+    margin: 5px;
+    padding: 5px;
+  }
+
 main{
     background-color: rgb(171, 236, 209);
     width: 25%;
-    text-align: center;
-
-
-    &__form{
-        text-align: center;
-        color: white;
+    #name:hover{
+        transform: translate(50px,100px);
     }
+    #lastname:hover{
+        transform: rotate(60deg);
+    }
+    #birthday:hover{
+        transform: scale(0.1);
+        animation-name: cumple;
+        animation-duration: 4s;
+    }
+    #email:hover{
+        transform: rotate(100deg);
+    }
+    #numero:hover{
+        width: 100px;
+        animation-name: numero;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    #direccion:hover{
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+   
+        @keyframes numero {
+            0%   {left:0px; top:0px;}
+            25%  {left:200px; top:0px;}
+            50%  {left:200px; top:200px;}
+            75%  {left:0px; top:200px;}
+            100% {left:0px; top:0px;}
+
+    }
+    @keyframes cumple {
+        0%   {right:0px; bottom:0px;}
+        25%  {right:200px; bottom:0px;}
+        50%  {left:200px; top:200px;}
+        75%  {left:0px; top:200px;}
+        100% {left:0px; top:0px;}
+    }
+    
+
 }
