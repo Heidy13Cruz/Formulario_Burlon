@@ -5,15 +5,23 @@ body{
     width: 100%;
     margin-left: 35%;
 }
+ h1{
+    text-align: center;
+ }
+ul {
+    list-style: none;
+}
 
 input{
-    margin: 5px;
+    margin: 8px;
     padding: 5px;
   }
 
 main{
     background-color: rgb(171, 236, 209);
     width: 25%;
+    font-family: 'Itim', cursive;
+
     #name:hover{
         transform: translate(50px,100px);
     }
@@ -29,13 +37,22 @@ main{
         transform: rotate(100deg);
     }
     #numero:hover{
-        width: 100px;
         animation-name: numero;
         animation-duration: 4s;
+        transform: translate(-26deg);
+        transform: translateY(-28px);
         animation-iteration-count: infinite;
     }
     #direccion:hover{
-        transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+        animation-name: numero;
+        animation-duration: 4s;
+        transform: translate(-26deg);
+        transform: translateY(-28px);
+        animation-iteration-count: infinite;
+    }
+    #button:hover{
+        transform: scale(0.1);
+
     }
    
         @keyframes numero {
@@ -54,5 +71,13 @@ main{
         100% {left:0px; top:0px;}
     }
     
+    @keyframes direccion {
+        0%   {left:0px; top:0px;}
+        25%  {left:190px; top:0px;}
+        50%  {left:180px; top:200px;}
+        75%  {left:0px; top:200px;}
+        100% {left:0px; top:0px;}
+    }
+
 
 }
